@@ -59,6 +59,17 @@
          background-size: cover;
          background-position: center;
       }
+      .view-product {
+         margin-top: 5px;
+         padding: 5px 20px;
+         background-color: burlywood;
+         font-size: 16px;
+         color: #fff;
+         border-radius: 6px;
+      }
+      .view-product:hover {
+         opacity: 0.9;
+      }
    </style>
 </head>
 <body>
@@ -88,13 +99,13 @@
                   <form style="height: -webkit-fill-available;" action="" method="post" class="box">
                      <img  width="207px" height="224px" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
                      <div class="name"><?php echo $fetch_products['name']; ?></div>
-                     <div class="sub-name">Thương hiệu: <?php echo $fetch_products['trademark']; ?></div>
                      <div class="price"><span style="text-decoration-line:line-through; text-decoration-thickness: 2px; text-decoration-color: grey"><?php echo number_format($fetch_products['price'],0,',','.' ); ?></span> <u style="text-decoration: underline !important;">đ</u> /<?php echo number_format($fetch_products['newprice'],0,',','.' ); ?> <u style="text-decoration: underline !important;">đ</u> (-<?php echo $fetch_products['discount']; ?>%)</div>
                      <span style="font-size: 17px; display: flex;">Số lượng mua:</span>
                      <input type="number" min="<?=($fetch_products['quantity']>0) ? 1:0 ?>" max="<?php echo $fetch_products['quantity']; ?>" name="product_quantity" value="<?=($fetch_products['quantity']>0) ? 1:0 ?>" class="qty">
                      <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
                      <input type="hidden" name="product_price" value="<?php echo $fetch_products['newprice']; ?>">
                      <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
+                     <a href="product_detail.php?product_id=<?php echo $fetch_products['id'] ?>" class="view-product" >Xem thông tin</a>
                      <input type="submit" value="Thêm vào giỏ hàng" name="add_to_cart" class="btn">
                   </form>
       <?php
