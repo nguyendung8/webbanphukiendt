@@ -99,7 +99,7 @@
    <div class="out_of_stock">
    <h1 class="statis_title">Thống kê sản phẩm đã hết trong kho</h1>
     <?php if (count($out_of_stock) > 0): ?>
-      <div class="table-responsive card mt-2">
+      <div class="table-responsive card mt-2" style="margin-bottom: 30px;">
           <table style="width: 69% !important; margin: auto;" class="table table-bordered statistical_table">
               <tr>
                   <th>ID</th>

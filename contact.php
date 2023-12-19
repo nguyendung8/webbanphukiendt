@@ -42,9 +42,10 @@
    <link rel="stylesheet" href="css/style.css">
    <style>
       .head {
-         background: url(./images/home-about.jpg) no-repeat;
+         background: url(./images/head_img.jpg) no-repeat;
          background-size: cover;
          background-position: center;
+         min-height: 34vh;
       }
    </style>
 </head>

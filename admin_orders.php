@@ -101,15 +101,10 @@
       ?>
                <div style="height: -webkit-fill-available;" class="box">
                   <p> Id người dùng : <span><?php echo $fetch_orders['user_id']; ?></span> </p>
-                  <p> Ngày đặt : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
-                  <p> Tên : <span><?php echo $fetch_orders['name']; ?></span> </p>
-                  <p> Số điện thoại : <span><?php echo $fetch_orders['number']; ?></span> </p>
-                  <p> Email : <span><?php echo $fetch_orders['email']; ?></span> </p>
-                  <p> Địa chỉ : <span><?php echo $fetch_orders['address']; ?></span> </p>
+                  <p> Ngày đặt hàng : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
                   <p> Ghi chú : <span><?php echo $fetch_orders['note']; ?></span> </p>
                   <p> Tổng sản phẩm : <span><?php echo $fetch_orders['total_products']; ?></span> </p>
                   <p> Tổng giá : <span><?php echo number_format($fetch_orders['total_price'],0,',','.' ); ?> VND</span> </p>
-                  <p> Phương thức thanh toán : <span><?php echo $fetch_orders['method']; ?></span> </p>
                   <form action="" method="post">
                      <input type="hidden" name="order_id" value="<?php echo $fetch_orders['id']; ?>">
       <?php
@@ -122,9 +117,8 @@
          ?>
                         <select name="update_payment" required>
                            <option value="" selected disabled><?php echo $fetch_orders['payment_status']; ?></option>
-                           <!-- <option value="Chờ xác nhận">Chờ xác nhận</option> -->
-                           <option value="Đã xác nhận">Đã xác nhận</option>
-                           <option value="Đang xử lý">Đang xử lý</option>
+                           <?php if($fetch_orders['payment_status'] == 'Chờ xác nhận') {  ?><option value="Đã xác nhận">Đã xác nhận</option> <?php } ?>
+                           <?php if($fetch_orders['payment_status'] == 'Chờ xác nhận' || $fetch_orders['payment_status'] == 'Đã xác nhận') {  ?><option value="Đang xử lý">Đang xử lý</option><?php } ?>
                            <option value="Hoàn thành">Hoàn thành</option>
                         </select>
                         <input type="submit" value="Cập nhật" name="update_order" class="option-btn">

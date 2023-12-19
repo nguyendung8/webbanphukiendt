@@ -22,9 +22,10 @@
    <link rel="stylesheet" href="css/style.css">
    <style>
       .head {
-         background: url(./images/home-about.jpg) no-repeat;
+         background: url(./images/head_img.jpg) no-repeat;
          background-size: cover;
          background-position: center;
+         min-height: 34vh;
       }
    </style>
 </head>
@@ -40,12 +41,12 @@
    <div class="flex">
 
       <div class="image">
-         <img height="350px" src="images/about_img.jpeg" alt="">
+         <img height="350px" src="images/about_img.jpg" alt="">
       </div>
 
       <div class="content">
-         <h3>Tại sao lại có Ngọc Huy Shoes.</h3>
-         <p>Thoải mái trong từng bước đi, hãy mang ánh sáng trên đôi chân của bạn, hãy mạnh mẽ trong cuộc sống, năng động trong sự thoải mái.</p>
+         <h3>Tại sao lại có Phụ kiện số 1.</h3>
+         <p>Hiện cửa hàng phụ kiện điện thoại gần đây đang có chương trình khuyến mãi giá tốt nhất cho các sản phẩm tiện ích, chỉ 49k cho mỗi món phụ kiện mà thôi.</p>
          <p>Tạo dấu chân của riêng bạn.</p>
          <a href="contact.php" class="btn">Liên hệ</a>
       </div>
@@ -57,10 +58,18 @@
 
 <section class="authors">
 
-   <h1 class="title">Thành viên của Ngọc Huy Shoes</h1>
+   <h1 class="title">Thành viên của Phụ kiện số 1</h1>
 
    <div class="box-container">
 
+      <div class="box">
+         <img src="images/anhcanhan.jpg" alt="">
+         <div class="share">
+            <a href="https://www.facebook.com/ngochuymarketing" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="#" class="fab fa-instagram"></a>
+         </div>
+         <h3>Ngọc Huy</h3>
+      </div>
       <div class="box">
          <img src="images/anhcanhan.jpg" alt="">
          <div class="share">

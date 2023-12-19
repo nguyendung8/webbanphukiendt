@@ -109,7 +109,7 @@
       }
       .home-banner {
          min-height: 70vh;
-         background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(./images/home_bg.jpg) no-repeat;
+         background:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(./images/home-bg.jpg) no-repeat;
          background-size: cover;
          background-position: center;
          display: flex;
@@ -127,25 +127,13 @@
 <div class="content">
       <div class="slideshow-container">
          <div class="slide fade">
-            <img src="./images/slider1.jpg" alt="slide 1">
+            <img src="./images/slide1.jpg" alt="slide 1">
          </div>
          <div class="slide fade">
-            <img src="./images/slider2.jpg" alt="slide 2">
+            <img src="./images/slide2.jpg" alt="slide 2">
          </div>
          <div class="slide fade">
-            <img src="./images/slider3.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider4.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider5.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider6.jpg" alt="slide 3">
-         </div>
-         <div class="slide fade">
-            <img src="./images/slider7.jpg" alt="slide 3">
+            <img src="./images/slide3.jpg" alt="slide 3">
          </div>
       </div>
    </div>
@@ -199,12 +187,12 @@
    <div class="flex">
 
       <div class="image">
-         <img height="307px;" style="border-radius: 4px;" src="images/home_about.jpg" alt="">
+         <img height="307px;" style="border-radius: 4px;" src="images/home_footer.jpg" alt="">
       </div>
 
       <div class="content">
-         <h3>Ngọc Huy Shoes</h3>
-         <p>Giày là một trong những món đồ không thể thiếu trong cuộc sống hằng ngày. Không chỉ là vật dụng bảo vệ đôi chân và phục vụ nhu cầu “xê dịch”, những đôi giày còn thể hiện phong cách cá nhân và niềm đam mê của những tín đồ yêu thời trang.</p>
+         <h3>Phụ kiện số 1</h3>
+         <p>Hãy đến shop phụ kiện của chúng tôi để tận tay trải nghiệm các sản phẩm hoặc quý vị có thể đặt mua phụ kiện online trên website. Chỉ vài thao tác là quý vị đã có thể đặt hàng thành công mà không cần phải thanh toán trước.</p>
       </div>
 
    </div>
